@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+   	<struts>
+   		<constant name="struts.devMode" value="true" />
+   		<package name="accountPackage" extends="struts-default">
+   			<interceptors>
+   				<interceptor name="LoginInterceptor" class="tutorial.strutsTutorial.interceptor.LoginInterceptor" />
+   			</interceptors>
+   			<action name="LoginHere">
+      			<result>/jsp/Login.jsp</result>
+    		</action>
+    		<action name="RegisterHere">
+      			<result>/jsp/Register.jsp</result>
+    		</action>
+   			
+   			<action name="Login" class="tutorial.strutsTutorial.action.LoginAction" method="execute">
+   				<interceptor-ref name="params"/>
+   				<interceptor-ref name="validation"/>
+   				<interceptor-ref name="workflow" />
+   				<interceptor-ref name="LoginInterceptor" />
+   				<result name="input">/jsp/Login.jsp</result>
+   				<result name="Success">/jsp/Account.jsp</result>
+   				<result name="Failure">/jsp/Login.jsp</result>
+   			</action>
+   			<action name="Register" class="tutorial.strutsTutorial.action.RegisterAction" method="execute">
+   				<interceptor-ref name="params"/>
+   				<interceptor-ref name="validation"/>
+   				<interceptor-ref name="workflow" />
+   				<result name="input">/jsp/Register.jsp</result>
+   				<result name="Success">/jsp/Login.jsp</result>
+   				<result name="Failure">/jsp/Register.jsp</result>
+   			</action>
+   		</package>
+   	</struts>
