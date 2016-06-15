@@ -1,11 +1,11 @@
-package tutorial.strutsTutorial.dao;
+package tutorial.strutsDemo.dao;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import tutorial.strutsTutorial.model.LoginModel;
+import tutorial.strutsDemo.model.LoginModel;
 
 public class LoginDAO {
 	Statement st;

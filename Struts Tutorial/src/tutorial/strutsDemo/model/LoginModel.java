@@ -1,4 +1,4 @@
-package tutorial.strutsTutorial.model;
+package tutorial.strutsDemo.model;
 
 public class LoginModel {
 

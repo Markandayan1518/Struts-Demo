@@ -1,10 +1,10 @@
-package tutorial.strutsTutorial.dao;
+package tutorial.strutsDemo.dao;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import tutorial.strutsTutorial.model.RegisterModel;
+import tutorial.strutsDemo.model.RegisterModel;
 
 public class RegisterDAO {
 	Statement st;

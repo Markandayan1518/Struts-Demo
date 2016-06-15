@@ -1,8 +1,8 @@
-package tutorial.strutsTutorial.action;
+package tutorial.strutsDemo.action;
 
-import tutorial.strutsTutorial.dao.DAOFactory;
-import tutorial.strutsTutorial.dao.LoginDAO;
-import tutorial.strutsTutorial.model.LoginModel;
+import tutorial.strutsDemo.dao.DAOFactory;
+import tutorial.strutsDemo.dao.LoginDAO;
+import tutorial.strutsDemo.model.LoginModel;
 
 import com.opensymphony.xwork2.ActionSupport;
 

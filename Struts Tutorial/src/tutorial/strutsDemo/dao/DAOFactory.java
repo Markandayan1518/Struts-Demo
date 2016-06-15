@@ -1,4 +1,4 @@
-package tutorial.strutsTutorial.dao;
+package tutorial.strutsDemo.dao;
 
 
 public class DAOFactory {
