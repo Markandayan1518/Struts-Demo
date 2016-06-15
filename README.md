@@ -1,2 +1,2 @@
-# Struts-Tutorial
+Struts-Demo
 Struts 1.3 Tutorial with Mysql connection along with Filter examples
